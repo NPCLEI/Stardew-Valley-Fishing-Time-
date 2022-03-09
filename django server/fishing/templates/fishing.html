@@ -1,0 +1,25 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link href="{% static '/css/fishing.css' %}" rel="stylesheet" type="text/css"/>
+    </head>
+
+	<script type="text/javascript" src="{% static '/js/jquery-3.5.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static '/js/sweetalert.min.js' %}"></script>
+	<script type="text/javascript" src="{% static '/js/fishing.js' %}"></script>
+
+    <script>
+
+    </script>
+
+    <body onselectstart="return false;">
+        <img id = "frame" src="{% static '/img/frame.png' %}" alt="">
+        <canvas id = "float_cv"></canvas>
+        <canvas id = "process_cv"></canvas>
+        <img id = "float" hidden src="{% static '/img/float.png' %}" alt=""/>
+        <img id = "fish" hidden src="{% static '/img/fish.png' %}" alt=""/>
+        <img id = "frame_bak" src="{% static '/img/frame_bak.png' %}" alt=""/>
+    </body>
+</html>
